@@ -1,24 +1,28 @@
 package UnicornProgram;
-public class Unicorn {
-    private int age;
-    String colour, mood;
-    boolean horn, alive;
 
-    Unicorn(int age, String colour, String mood, boolean alive, boolean horn) {
-        this.age = age;
+public class Unicorn { // req 1.a
+    private String name;
+    private String colour;
+
+    Unicorn(String name, String colour) { // req 1.b
+        this.name = name;
         this.colour = colour;
-        this.mood = mood;
-        this.horn = horn;
-        this.alive = alive;
     }
 
-    void setAge(int age) {
-        this.age = age;
+    // req 1.c
+    void setName(String name) {
+        this.name = name;
     }
     
-    int getAge(){
-        return age;
+    String getName(){
+        return name;
     }
 
-    void runWild() {}
+    void setColour (String colour){
+        this.colour = colour;
+    }
+
+    String getColour(){
+        return colour;
+    }
 }
