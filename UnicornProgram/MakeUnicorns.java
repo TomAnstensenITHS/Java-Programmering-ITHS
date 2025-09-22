@@ -1,3 +1,4 @@
+package UnicornProgram;
 public class MakeUnicorns {
     
     public static void main(String[] args) {

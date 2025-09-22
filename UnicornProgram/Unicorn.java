@@ -1,3 +1,4 @@
+package UnicornProgram;
 public class Unicorn {
     private int age;
     String colour, mood;

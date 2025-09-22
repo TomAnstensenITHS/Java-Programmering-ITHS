@@ -1,0 +1,14 @@
+We want to make an application that creates and sorts Unicorns.
+
+1. A user can create a unicorn object and assign it a name and colour.
+    a - Create a Unicorn class.
+    b - Create constructor that takes 'name' and 'colour' as input.
+    c - Create setters and getters for name and colour
+2. The app will give details about the created unicorns according to a users choice.
+    a - Design a user menu.
+    b - The menu is numberbased and printed in the terminal window
+    c - Choices should be 
+        1. create new unicorn 
+        2. list created unicorns
+        3. end program
+    d - Each choice corresponds to a different method in the MakeUnicorns class.
