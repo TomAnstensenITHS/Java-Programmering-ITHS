@@ -1,23 +1,46 @@
 import java.util.Scanner;
 
 public class LearningMethods {
+   
+    public static String name;
+    public static int age;
+    public static boolean indoorPerson = false;
+    public static boolean outdoorPerson = false;
+    public static Scanner sc = new Scanner (System.in);
+    
     public static void main(String[] args) {
-        String name;
-        int age;
-        boolean indoorPerson = false;
-        boolean outdoorPerson = false;
+        
+        LearningMethods.welkomeMethod();
+        LearningMethods.ageMethod();
+        LearningMethods.inOchOutMethod();
 
+
+    sc.close();
+    }    
+    
+    public static void welkomeMethod(){
+        
         System.out.println("Hello! I want to show you how to use methods!");
         System.out.println("First off, what is your name?");
-        Scanner sc = new Scanner (System.in);
         name = sc.nextLine();
         System.out.println("Nice to meet you " + name + "!");
+    
+    }
+
+
+    public static void ageMethod(){
         System.out.println("What is your age?");
         age = sc.nextInt();
         System.out.println("That means you where born in " + (2025 - age) + "!");
+
+    }
+
+    public static void inOchOutMethod(){
+        
         System.out.println("Are you an indoor or outdoor person?");
         sc.nextLine();
         String answer = sc.nextLine();
+
         if(answer.matches("indoor")|| answer.matches("Indoor")) {
             indoorPerson = true;
         }
@@ -35,6 +58,9 @@ public class LearningMethods {
             System.out.println("Lets start over!");
         }
 
-        sc.close();
+        
     }
+
+
+    
 }
